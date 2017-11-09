@@ -1,0 +1,195 @@
+/*
+* @Author: TimmLee
+* @Date:   2017-11-07 09:13:14
+* @Last Modified by:   TimmLee
+* @Last Modified time: 2017-11-09 15:28:51
+*/
+
+/*css reset*/
+* {
+  pading: 0;
+  margin: 0;
+}
+body {
+  background: #f6f6f6;
+  font: 12px/1.5 tahoma, airal, Microsoft YaHei, sans-serif;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  border: none;
+}
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+/* 定宽布局 */
+.w {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  height: 552px;
+  width: 100%;
+  background-image: url(./design-1200x633.jpg);
+  background-size: cover;
+}
+
+/*整个导航部分*/
+.nav {
+  height: 86px;
+  width: 100%;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*导航左右填充部分*/
+.fill_left,
+.fill_right {
+  height: 100%;
+  flex-grow: 1;
+  background-color: #f0c239;
+}
+
+/*导航中间部分：logo+导航条*/
+.nav_center {
+  height: 100%;
+  flex-basis: 1080px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*导航logo*/
+.logo {
+  box-sizing: border-box;
+  border: 10px solid #f0c239;
+  width: 264px;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > span {
+  color: #f0c239;
+  font-size: 70px;
+  line-height: 45px;
+  height: 50px;
+  padding: 0 10px 0 5px;
+  margin: 10px 0;
+  /*height: 45px;*/
+  /*padding-top: 30px;*/
+}
+
+.logo > span:not(:last-of-type) {
+  border-right: 5px solid #f0c239;
+}
+
+.nav_bar {
+  flex-grow: 1;
+  background-color: #f0c239;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.nav_bar a {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  color: #ebede2;
+}
+
+.nav_bar a:hover {
+  cursor: pointer;
+  color: #c30;
+}
+
+/*标语*/
+.slogan {
+  font-size: 36px;
+  /*background-color: #ccc;*/
+  text-align: center;
+  margin-top: 176px;
+  /*color: #fcefe8;*/
+  color: #fff;
+  text-shadow: 0.2em 0.2em rgba(57, 57, 57, 0.3);
+}
+
+/*中间部分内容*/
+.content {
+  background-color: #fcefe8;
+}
+
+.course .title {
+  box-sizing: border-box;
+  height: 176px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  padding: 92px;
+  color: #9f4f36;
+}
+
+.course .levels {
+  display: flex;
+  justify-content: center;
+} 
+
+.course .levels .level_item {
+  box-sizing: border-box;
+  height: 372px;
+  width: 182px;
+  margin: 0 48px;
+  flex-direction: column;
+}
+
+.course .levels .level_item .img {
+  height: 180px;
+  width: 182px;
+  background-image: url(design-1200x633.jpg);
+  background-size: cover;
+}
+
+.course .levels .level_item .description {
+  height: 192px;
+  background-color: #f9906f;
+  color: #fdf7f3;
+  overflow: hidden;
+}
+
+.description .level_title {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.description p {
+  text-indent: 15px;
+  font-size: 15px;
+  padding: 0 10px;
+  text-overflow: ellipsis;
+}
+
+
+/*about us*/
+
+.about .title {
+  box-sizing: border-box;
+  font-size: 48px;
+  line-height: 48px;
+  color: #23704a;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 34px;
+}
